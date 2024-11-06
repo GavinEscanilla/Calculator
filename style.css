@@ -28,8 +28,9 @@ body #root .calculator .display {
   background-color: white;
   border-radius: 10px;
   margin: 0;
+  white-space: nowrap;
 }
-body #root .calculator .display .prerevious {
+body #root .calculator .display .previous {
   background-color: darkgrey;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -37,13 +38,49 @@ body #root .calculator .display .prerevious {
   height: 100px;
   text-align: end;
   padding-right: 20px;
+  background-color: #000;
 }
 body #root .calculator .display .current {
-  background-color: darkgrey;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: #000;
   height: 100px;
   font-size: 100px;
   text-align: end;
   padding-right: 20px;
+}
+body #root .calculator .button {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+body #root .calculator .button button {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+}
+body #root .calculator .button #clear {
+  width: 200px;
+  background-color: darkred;
+}
+body #root .calculator .button #seven, body #root .calculator .button #eight, body #root .calculator .button #nine, body #root .calculator .button #four, body #root .calculator .button #five, body #root .calculator .button #six, body #root .calculator .button #one, body #root .calculator .button #two, body #root .calculator .button #three {
+  width: 133px;
+  background-color: darkgrey;
+}
+body #root .calculator .button #decimal {
+  width: 400px;
+}
+body #root .calculator .button #zero, body #root .calculator .button #decimal {
+  background-color: darkgrey;
+}
+body #root .calculator .button #equals {
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */
